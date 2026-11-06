@@ -8,7 +8,7 @@ Run the checks below. Verify fails if any check fails. Report each failing check
 ## The checks
 
 1. **The tests pass:** `npm test`.
-2. **A live run, as IT would:** `npm run live-check`, with the test environment running. It takes the two tokens from `ROUTA_TOKEN` and `ROUTA_READONLY_TOKEN`, which are already in the environment. Don't read the token files.
+2. **A live run, as IT would:** `npm run live-check`, with the test environment running (`npm run test-environment`, on port 4692 unless `ROUTA_URL` says otherwise). It takes the two tokens from `ROUTA_TOKEN` and `ROUTA_READONLY_TOKEN`, which are already in the environment. Don't read the token files.
 3. **The security judge:** a fresh agent that didn't build the server reads it against a file of criteria. See below.
 
 ## The security judge
